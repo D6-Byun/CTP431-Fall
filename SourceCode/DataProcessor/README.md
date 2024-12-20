@@ -2,15 +2,19 @@
 
 ## Purpose
 input = 3 second duration .wav (Data/IRMAS-TrainingData)
+
 ![input](https://github.com/D6-Byun/CTP431-Fall/blob/main/SourceCode/DataProcessor/input.png)
 
 middle output 1 = db normalized 3 second duration .wav (Data/Output/Normalize)
+
 ![middle output 1](https://github.com/D6-Byun/CTP431-Fall/blob/main/SourceCode/DataProcessor/output_1.png)
 
 middle output 2 = 224x224 mel-spectrogram image (Data/Output/Spectrogram)
+
 ![middle output 2](https://github.com/D6-Byun/CTP431-Fall/blob/main/SourceCode/DataProcessor/output_2.jpg)
 
 middle output 3 = tensor datafile (Data/Output)
+
 ![output](https://github.com/D6-Byun/CTP431-Fall/blob/main/SourceCode/DataProcessor/output_3.png)
 
 
