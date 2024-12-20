@@ -3,6 +3,12 @@
 This repository is consist of 3 parts: DatasetProcessor, Model, Application.
 
 
+## Overall Abstraction
+1. DatasetProcessor : Process sound data(IRMAS) to mel-spectrogram image, and collect them to dataset.pt file.
+2. Model : Train VGG19 CNN model to classify musical instrument.
+3. Application : Frontend and backend script that can send sound file and display the result with trained model and data processor 
+
+
 # DataProcessor
 
 ## Purpose
