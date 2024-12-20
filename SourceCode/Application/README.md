@@ -50,3 +50,8 @@ App.js for react frontend (Frontend/src)
 - model prediction corresponding current played time index of audio player
 
 ![result_predict](https://github.com/D6-Byun/CTP431-Fall/blob/main/SourceCode/Application/Frontend/result_predict.png)
+
+model prediction only shows (>10%) possible instruments. Higher possible instrument has larger font size.
+
+The actual prediction values are as follows.
+![result_predict_detail](https://github.com/D6-Byun/CTP431-Fall/blob/main/SourceCode/Application/Frontend/result_predict_detail.png)

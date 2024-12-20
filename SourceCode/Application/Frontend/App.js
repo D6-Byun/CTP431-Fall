@@ -119,11 +119,17 @@ const updatePrediction = () => {
             <div>
               <h4>Current Prediction:</h4>
               {currentPrediction &&
-                currentPrediction.map((pred, idx) => (
-                  <p key={idx}>
-                    {pred.instrument}: {pred.probability}
-                  </p>
-                ))}
+                currentPrediction.map((pred, idx) => {
+                  const probability = parseFloat(pred.probability); // 숫자로 변환
+                  if (probability > 0.1) {
+                    return (
+                      <p key={idx} style={{ fontSize: `${10 + probability * 40}px` }}>
+                        {pred.instrument}: {pred.probability}
+                      </p>
+                    );
+                  }
+                  return null; // 0.1 이하일 경우 아무것도 렌더링하지 않음
+                })}
             </div>
           </div>
         )}
